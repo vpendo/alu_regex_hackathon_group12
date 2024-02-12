@@ -3,11 +3,11 @@ import re
 # Test string
 test_string = """Movie Titles:
 Reacher (12)
-The Shawshank Redemption (1994)
+Game of Thrones (1993)
 Casablanca (1942)
 The Lord of the Rings: The Fellowship of the Ring (2001)
-Spirited Away (2001)
-Parasite (2019)"""
+The Orginals (2001)
+legacies (2019)"""
 
 # Regex pattern to match Titles
 titles_pattern = re.compile(r'.+ \(\d{4}\)')
