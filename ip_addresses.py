@@ -1,6 +1,5 @@
 import re
 
-
 # Test string
 test_string = """IP Addresses:
 256.2.134.282
