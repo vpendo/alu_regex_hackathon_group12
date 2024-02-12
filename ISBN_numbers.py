@@ -1,6 +1,6 @@
 import re
 
-# Test string
+# Strings of the Test
 
 test_string = """ISBN Numbers:
 ISBN 0307459914
