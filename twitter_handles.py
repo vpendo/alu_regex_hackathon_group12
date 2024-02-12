@@ -3,7 +3,7 @@ import re
 # Test string
 test_string = """Twitter Handles:
 #NBA
-@elonmusk
+@elonmus
 @NASA
 @NatGeo
 @BTS_twt
