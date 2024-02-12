@@ -1,20 +1,17 @@
 import re
 
-# define dataa
-test_string = """[1st verse] i'm the door open i'm leave the door open girl
-[2nd verse] open can't you see that i am coming through
-[3nd verse] yeah i love it when you say 
-[Outro] come closer
-[Rnb 1st verse] you better not change'"""
+# Test string
+test_string = """[Verse 1] The world is spinning 'round and 'round
+[Verse 2] We're dancing on the edge of something new
+[Verse 3] But don't you worry, we'll be alright
+[Outro] So hold on tight, and let's fly
+[Rap Verse 1] Yo, check it, the beat is bumpin'"""
 
-# Define the regular expression pattern to match song lyrics
-lyrics_pattern = re.compile(r'\[(\d+)(?:st|nd|rd|th) verse\].+')
+# Regex pattern to match song lyrics
+lyrics_pattern = re.compile(r'\[Verse \d+\].+')
 
-# Find all matches of the pattern in the test string
-matches = lyrics_pattern.findall(test_string)
-
-# Check if there are any matches and print them
-if matches:
-    print(f"Matches: {matches}")
+# Test to see if pattern matches them correctly
+if len(lyrics_pattern.findall(test_string)) != 0:
+    print(f"Matches: {lyrics_pattern.findall(test_string)}")
 else:
-    print(f"No matches found in the test string.")
+    print(f"{test_string} has no matches")

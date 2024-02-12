@@ -1,22 +1,19 @@
 import re
 
-# Define the test string
+# Test string
 test_string = """Twitter Handles:
-#soccer
-@michaeljrd
-@FBI
-@TF1
-@migos
+#NBA
+@elonmusk
+@NASA
+@NatGeo
+@BTS_twt
 @GretaThunberg"""
 
-# Define the regular expression pattern to match Twitter usernames
-twitter_pattern = re.compile(r'@\w+')
+# Regex pattern to match twitter usernames
+usernames_pattern = re.compile(r'@\w+')
 
-# Find all matches of the pattern in the test string
-matches = twitter_pattern.findall(test_string)
-
-# Check if there are any matches and print them
-if matches:
-    print(f"Matches: {matches}")
+# Test to see if pattern matches them correctly
+if len(usernames_pattern.findall(test_string)) != 0:
+    print(f"Matches: {usernames_pattern.findall(test_string)}")
 else:
-    print(f"No matches found in the test string.")
+    print(f"{test_string} has no matches")
