@@ -2,7 +2,7 @@ import re
 
 # Test string
 test_string = """Movie Titles:
-Avengers (12)
+Reacher (12)
 The Shawshank Redemption (1994)
 Casablanca (1942)
 The Lord of the Rings: The Fellowship of the Ring (2001)
