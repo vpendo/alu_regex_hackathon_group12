@@ -1,5 +1,6 @@
 import re
 
+
 # Test string
 test_string = """Hex Color Codes:
 #FF001
