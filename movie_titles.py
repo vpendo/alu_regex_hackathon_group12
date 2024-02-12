@@ -12,7 +12,7 @@ legacies (2019)"""
 # Regex pattern to match Titles
 titles_pattern = re.compile(r'.+ \(\d{4}\)')
 
-# Test to see if pattern matches them correctly
+# Test to see if pattern matches the movie titles
 if len(titles_pattern.findall(test_string)) != 0:
     print(f"Matches: {titles_pattern.findall(test_string)}")
 else:

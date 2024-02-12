@@ -2,12 +2,11 @@ import re
 
 # Test string
 test_string = """Twitter Handles:
-#NBA
-@elonmus
-@NASA
-@NatGeo
-@BTS_twt
-@GretaThunberg"""
+#Hits
+@andrewray
+@tomhanks
+@Cristiano
+@TheOriginals"""
 
 # Regex pattern to match twitter usernames
 usernames_pattern = re.compile(r'@\w+')

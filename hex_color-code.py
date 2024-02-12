@@ -4,7 +4,7 @@ import re
 color_pattern = re.compile(r'#[A-Fa-f0-9]{6}')
 
 # Prompt the user to enter the color codes
-user_input = input("Enter the color codes: ")
+user_input = input("Enter the color codes, for example [#ffffff]: ")
 
 # Test to see if pattern matches the user-provided color codes
 matches = color_pattern.findall(user_input)
